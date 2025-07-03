@@ -13,8 +13,17 @@ Transcreva arquivos de áudio e vídeo (MP4, WAV, OGG) de forma simples e rápid
 - Interface web simples e responsiva
 
 ---
+## ⚙️ Como Usar Usando Streamlit Cloud
+1. **Entrar no site**
+https://transcricao-api.streamlit.app/
 
-## ⚙️ Como Usar
+2. **Colocar a OpenAI API KEY**
+
+3. **Subir o arquivo**
+
+4. **Baixar a transcrição**
+
+## ⚙️ Como Usar Localmente
 
 1. **Clone o repositório:**
    ```bash
