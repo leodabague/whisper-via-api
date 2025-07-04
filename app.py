@@ -52,8 +52,8 @@ api_key = st.text_input(
 # Upload do arquivo
 uploaded_file = st.file_uploader(
     "Selecione um arquivo p/ transcrição:",
-    type=['mp4', 'wav', 'ogg'],
-    help="Extensões suportadas: (.mp4, .wav, .ogg). Tamanho máximo 25MB por arquivo."
+    type=['mp4', 'wav', 'ogg', 'm4a', 'webm'],
+    help="Extensões suportadas: (.mp4, .wav, .ogg, .m4a, .webm). Tamanho máximo 25MB por arquivo."
 )
 
 st.divider()
@@ -61,7 +61,7 @@ st.divider()
 st.subheader("📋 Como usar:")
 st.info("""
 1. Insira sua chave da API da OpenAI
-2. Faça upload de um arquivo .mp4 .wav .ogg
+2. Faça upload de um arquivo .mp4 .wav .ogg .m4a .webm
 3. Clique em "Transcrever"
 4. Baixe os arquivos de transcrição (TXT, VTT)
 """)
@@ -194,7 +194,7 @@ with st.sidebar:
     5. Copie e cole aqui
     
     ### 📋 Formatos Suportados
-    - **Entrada**: MP4, WAV, OGG
+    - **Entrada**: MP4, WAV, OGG, M4A, WEBM
     - **Saída**: TXT, VTT
     """)
     
